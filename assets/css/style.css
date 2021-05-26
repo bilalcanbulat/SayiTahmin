@@ -1,0 +1,57 @@
+.zorlukMenu{
+    /* display: none; */
+
+}
+.zorluk{
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 150px; 
+    background-color: antiquewhite; 
+    display: block;   
+}
+.h2{
+    font-size: 3vw;
+}
+.p{
+    font-size: 2vw;
+}
+.btn {
+    width: 50%;
+    height: 40px;
+    font-size: 1.5vw;
+  }
+
+  #oyun{
+    width: 99%;
+    height: 99%;
+    border: solid;
+    margin-left: 2px;
+  }
+#ust{
+    border-bottom-style: solid;
+    margin-left: 4px;
+}
+#alt{
+   
+}
+
+#ortaKutu{
+    width: 20%;
+    height: 30%;
+    border: solid;
+    margin-top: -100;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    position:relative;
+}
+#sayiGir{
+    width: 50%;
+    height: 50%;
+    font-size: x-large;
+    text-align: center;
+    display: block;
+}

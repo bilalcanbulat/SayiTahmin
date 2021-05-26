@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="d-block" id="zorlukMenu">
+        <h2 style="text-align: center; display: block;">Sayı Tahmin Oyunu</h2>
+        <div class="zorluk  d-flex justify-content-center align-items-center text-center">
+  
+        <div class="divButton">
+        <button id="btnKolay" class="kolay btn btn-info">KOLAY</button>
+        <button id="btnOrta" class="orta btn btn-secondary">ORTA</button>
+        <button id="btnZor" class="zor btn btn-danger">ZOR</button>
+         </div>
+        </div>
+    </div>
+   
+    <div class="d-none" id="oyun" style="background-color: antiquewhite; padding: 0px;">
+        <h2 class="h2" style="text-align: center;">Sayı Tahmin Oyununa Hoşgeldiniz... </h2>
+        <div id="ust" class="row" style="height: 45%; background-color: aqua; margin: 0px;">
+            <div class="col-4">
+                <button id="btnTekrar" class="btn btn-danger">Başla</button>
+                <p id="seviye" class="P"></p>
+
+            </div>
+            <div class="col-4 d-flex justify-content-center align-items-center text-center"">
+                <h2 id="tahminEtYazi" class="h2">Sayıyı Tahmin Et...</h2>
+            </div>
+            <div class="col-4">
+                <p id="sayiAralik" class="p">1-20 Arasında Sayı Giriniz...</p>
+                <div class=" col-3" style="border:solid; border-radius: 20px;"><p class="text-center"> Geçen Süre </p><p id="zaman" class="text-center"></p></div>
+            </div>
+        </div>
+            <div id="ortaKutu" class="d-flex justify-content-center align-items-center text-center container-fluid" >
+                <div class="container-fluid"><p id="tahmin" class="display-1 text-center">?</p></div>
+            </div>
+
+        <div id="alt" class="row" style="height: 47%; margin:0px; margin-top: -100px; background-color:forestgreen">
+            <div class="col-5 d-flex d-flex justify-content-center align-items-center">
+            <div>
+            <input onkeyup="baslat()" id="sayiGir" type="number" style="border: solid; border-radius: 20px; margin-bottom: 5px;">  
+            <button id="btnKontrolEt" class="btn btn-info">KONTROL ET</button>
+            </div>
+            </div>
+            <div class="col-3">
+                
+            </div>
+            <div class="col-4 d-flex d-flex justify-content-center align-items-center">
+                <div>
+                <div>
+                <p id="tahminNe" class="p"">Tahmine Başlanıyor...</p>
+                </div>
+
+                <div>
+                    <p class="p">Puan :</p> <p id="puan">0</p>
+                </div>
+                <div>
+                    <p class="p"> En Yüksek Puan :</p> <p id="enYuksekPuan">0</p>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
