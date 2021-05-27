@@ -31,17 +31,28 @@ function durum(sonuc){
     }else {
     document.getElementById("tahminEtYazi").innerHTML="****KAZANDINIZ****";
     document.getElementById("ortaKutu").style.backgroundColor="green"  ;  
-    basla=false;
+  
     if (toplamEnBuyukPuan<playerPuan) {toplamEnBuyukPuan=playerPuan;
         document.getElementById("enYuksekPuan").innerHTML=toplamEnBuyukPuan;
         
-        
+        basla=false;    
     }
 
 
     }
     document.getElementById("tahmin").innerHTML=rastgeleSayi;
 }
+function tahminNeYazdir(tahmin){
+    if (tahmin>enKucuk&&tahmin<rastgeleSayi) {
+        enKucuk=tahmin;
+    }else if(tahmin<enBuyuk&&tahmin>rastgeleSayi) {
+        enBuyuk=tahmin;
+    }
+    document.getElementById("puan").innerHTML=playerPuan;
+    document.getElementById("tahminNe").innerHTML=enKucuk+" iLE "+enBuyuk+" arasında";
+}
+
+
 function timer() {
   if (basla) {
     gecenSure++;
@@ -75,9 +86,7 @@ document.querySelector("#btnTekrar").onclick =function(){
     }
    
 }
-document.querySelector("#btnKontrolEt").onclick =function(){
 
-}
 
 document.querySelector("#btnKolay").onclick =function(){
     maksimumRastgele=1000;
@@ -134,15 +143,7 @@ document.querySelector("#btnKontrolEt").onclick =function(){
     }
 }
 
-function tahminNeYazdir(tahmin){
-    if (tahmin>enKucuk&&tahmin<rastgeleSayi) {
-        enKucuk=tahmin;
-    }else if(tahmin<enBuyuk&&tahmin>rastgeleSayi) {
-        enBuyuk=tahmin;
-    }
-    document.getElementById("puan").innerHTML=playerPuan;
-    document.getElementById("tahminNe").innerHTML=enKucuk+" iLE "+enBuyuk+" arasında";
-}
+
 
 document.getElementById("sayiGir").onkeyup=function(){
 if (!basla) {
