@@ -34,10 +34,8 @@ function durum(sonuc){
   
     if (toplamEnBuyukPuan<playerPuan) {toplamEnBuyukPuan=playerPuan;
         document.getElementById("enYuksekPuan").innerHTML=toplamEnBuyukPuan;
-        
-        basla=false;    
     }
-
+    basla=false; 
 
     }
     document.getElementById("tahmin").innerHTML=rastgeleSayi;
